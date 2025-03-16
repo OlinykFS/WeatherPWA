@@ -1,4 +1,3 @@
-```markdown
 # PWA Weather App
 
 A Progressive Web Application (PWA) that allows users to check the weather forecast for different cities and receive push notifications.
