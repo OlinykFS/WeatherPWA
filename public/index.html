@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="manifest" href="manifest.json">
+   <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+   <script defer src="/service-worker.js"></script>
+   <script defer src="/script.js"></script>
+   <meta name="theme-color" content="#123213">
+   <title>PWA - Weather Application</title>
+</head>
+
+<body class="bg-gray-100 font-sans">
+   <div class="container mx-auto p-6">
+      <h1 class="text-4xl font-semibold text-center mb-8">Aplikacja PWA - Pogoda</h1>
+
+      <div class="bg-white p-6 rounded-lg shadow-md">
+         <div id="weather" class="mb-6">
+            <p class="text-xl" id="city">Miasto: <span id="city-name">Wroclaw</span></p>
+            <p class="text-lg" id="temperature">Temperatura: <span id="temp">Ładowanie...</span></p>
+            <p class="text-lg" id="condition">Stan: <span id="condition-description">Ładowanie...</span></p>
+         </div>
+
+         <div class="mb-6">
+            <label for="cityInput" class="block text-lg font-medium mb-2">Wpisz miasto:</label>
+            <input type="text" id="cityInput"
+               class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+               placeholder="np. Wroclaw" />
+            <button id="getWeatherBtn"
+               class="mt-4 w-full py-2 bg-blue-500 text-white rounded-lg hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-500">Sprawdź
+               pogodę</button>
+         </div>
+
+         <div class="mt-6">
+            <button id="sendPush"
+               class="w-full py-2 bg-green-500 text-white rounded-lg hover:bg-green-600 focus:outline-none focus:ring-2 focus:ring-green-500">Wyślij
+               powiadomienie push</button>
+         </div>
+
+         <div class="mt-4">
+            <button id="subscribeBtn"
+               class="w-full py-2 bg-yellow-500 text-white rounded-lg hover:bg-yellow-600 focus:outline-none focus:ring-2 focus:ring-yellow-500">Subskrybuj
+               powiadomienia push</button>
+         </div>
+
+         <div class="mt-4">
+            <button id="installBtn" style="display: none;"
+               class="w-full py-2 bg-gray-800 text-white rounded-lg hover:bg-gray-900 focus:outline-none focus:ring-2 focus:ring-gray-900">Zainstaluj
+               aplikację</button>
+         </div>
+      </div>
+   </div>
+</body>
+
+</html>

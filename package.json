@@ -1,0 +1,25 @@
+{
+  "name": "weather_pwa",
+  "version": "1.0.0",
+  "description": "weather progressive web application with push messages",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server/server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/OlinykFS/WeatherPWA.git"
+  },
+  "author": "OlinykFs",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/OlinykFS/WeatherPWA/issues"
+  },
+  "homepage": "https://github.com/OlinykFS/WeatherPWA#readme",
+  "dependencies": {
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "web-push": "^3.6.7"
+  }
+}
