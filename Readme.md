@@ -20,7 +20,7 @@ A Progressive Web Application (PWA) that allows users to check the weather forec
 1. Clone the repository:
 
    ```bash
-   git clone <URL>
+   git clone https://github.com/OlinykFS/WeatherPWA
    ```
 
 2. Install dependencies:
