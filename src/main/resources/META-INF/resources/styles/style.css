@@ -1,0 +1,7 @@
+html, body {
+    font-family: 'Inter', sans-serif;
+}
+
+#installPrompt {
+    display: none;
+}

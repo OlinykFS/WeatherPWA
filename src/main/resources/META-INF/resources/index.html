@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+    <meta name="mobile-web-app-capable" content="yes">
+    <link rel="apple-touch-icon" href="icons/icon192x192.png">
+
+    <title>Просмотр файлов</title>
+
+    <link rel="manifest" href="manifest.json">
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <script src="scripts/script.js"></script>
+    <script defer src="scripts/install-pwa.js"></script>
+
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body class="bg-gray-100 dark:bg-gray-900 text-gray-900 dark:text-gray-100 flex justify-center items-center min-h-screen">
+
+<div class="bg-white dark:bg-gray-800 shadow-lg rounded-xl p-6 w-full max-w-lg">
+    <h1 class="text-2xl font-semibold text-center mb-4">📂 Список файлов</h1>
+    <ul id="filesList" class="space-y-2"></ul>
+</div>
+
+<div id="installPrompt" class="fixed inset-0 flex justify-center items-center bg-black bg-opacity-50 hidden">
+    <div class="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-lg text-center">
+        <p class="text-lg mb-4">Установите приложение для удобного доступа</p>
+        <button id="installBtn" class="bg-blue-500 dark:bg-blue-600 text-white py-2 px-4 rounded-lg hover:bg-blue-600 dark:hover:bg-blue-700 transition">
+            📲 Установить
+        </button>
+    </div>
+</div>
+
+</body>
+</html>
